@@ -165,8 +165,8 @@ class Mythread(QThread):
         try:
             username = wb.find_element(By.ID,'login_username')
             password = wb.find_element(By.ID,'login_password')
-            username.send_keys('CX009')
-            password.send_keys('CX0009')
+            username.send_keys('用户名')
+            password.send_keys('密码')
             wb.find_element(By.ID,'login_button').click()
         except Exception as e:
             print(e)
